@@ -1,0 +1,33 @@
+
+Showing logs for build [32mxino12jx-environment-voicechip-jdr7r-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-4hgmv[0m
+{"level":"warn","ts":1568886912.8129106,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568886912.814064,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mxino12jx-environment-voicechip-jdr7r-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-csx96[0m
+{"level":"warn","ts":1568886913.7559645,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1568886913.757878,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source /workspace/source/env\""}
+
+Showing logs for build [32mxino12jx-environment-voicechip-jdr7r-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mxino12jx-environment-voicechip-jdr7r-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-xino12jx-environment-voicechip-wh9tq[0m
+{"level":"warn","ts":1568886917.8549554,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1568886918.910221,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/xino12**/environment-voicechip-staging.git @ b2466b1d99b6d02867fe073f7f21aff1eeb8b205 in path /workspace/source"}
+
+Showing logs for build [32mxino12jx-environment-voicechip-jdr7r-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:be030140e60be63607abba505e5b8f9e385305cb,2:b2466b1d99b6d02867fe073f7f21aff1eeb8b205
+DEBUG: ran git fetch --unshallow origin b2466b1d99b6d02867fe073f7f21aff1eeb8b205: be030140e60be63607abba505e5b8f9e385305cb: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard be030140e60be63607abba505e5b8f9e385305cb in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge b2466b1d99b6d02867fe073f7f21aff1eeb8b205 in 
+Merged SHA b2466b1d99b6d02867fe073f7f21aff1eeb8b205 with commit message 'chore: Promote pytest to version 0.0.2' into base branch master
+
+Showing logs for build [32mxino12jx-environment-voicechip-jdr7r-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-helm-build[0m
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
